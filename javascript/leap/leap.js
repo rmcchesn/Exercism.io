@@ -5,7 +5,13 @@ let Year = function(year) {
 };
 
 Year.prototype.isLeap = function() {
-  return this.year % 4 === 0;
+  let isALeap = false;
+
+  if (this.year % 4 === 0 && (this.year % 100 !== 0 || this.year % 400 === 0)) {
+    isALeap = true;
+  }
+
+  return isALeap;
 };
 
 module.exports = Year;
