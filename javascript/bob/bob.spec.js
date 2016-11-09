@@ -28,32 +28,32 @@ describe('Bob', function() {
     expect(result).toEqual('Whatever.');
   });
 
-  xit('forceful questions', function() {
+  it('forceful questions', function() {
     var result = bob.hey('WHAT THE HELL WERE YOU THINKING?');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit('shouting numbers', function() {
+  it('shouting numbers', function() {
     var result = bob.hey('1, 2, 3 GO!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit('only numbers', function() {
+  it('only numbers', function() {
     var result = bob.hey('1, 2, 3');
     expect(result).toEqual('Whatever.');
   });
 
-  xit('question with only numbers', function() {
+  it('question with only numbers', function() {
     var result = bob.hey('4?');
     expect(result).toEqual('Sure.');
   });
 
-  xit('shouting with special characters', function() {
+  it('shouting with special characters', function() {
     var result = bob.hey('ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit('shouting with umlauts', function() {
+  it('shouting with umlauts', function() {
     /* NOTE: \xc4 = Ä
              \xe4 = ä
              \xdc = Ü

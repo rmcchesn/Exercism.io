@@ -14,10 +14,11 @@ let responseLibrary = {
 Bob.prototype.hey = function(input) {
   let responseType = 'normal';
 
-  if (input.toUpperCase() === input) {
+  // console.log('hello', input.match(/[a-z]/gi))
+
+  if (input.toUpperCase() === input && input.match(/[a-z]/gi) !== null) {
     responseType = 'shouting';
   } else if (input.slice(-1) === '?' || input.slice(-1) === '!') {
-    // console.log('here', input)
     responseType = 'expressive';
   }
 
