@@ -9,15 +9,18 @@ let responseLibrary = {
   normal: 'Whatever.',
   shouting: 'Whoa, chill out!',
   expressive: 'Sure.',
+  silent: 'Fine. Be that way!'
 };
 
 Bob.prototype.hey = function(input) {
   let responseType = 'normal';
 
-  // console.log('hello', input.match(/[a-z]/gi))
+  if (input.match(/\S/g) === null) {
+    responseType = 'silent';
 
-  if (input.toUpperCase() === input && input.match(/[a-z]/gi) !== null) {
+  } else if (input.toUpperCase() === input && input.match(/[a-z]/gi) !== null) {
     responseType = 'shouting';
+
   } else if (input.slice(-1) === '?' || input.slice(-1) === '!') {
     responseType = 'expressive';
   }

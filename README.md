@@ -27,6 +27,7 @@ Current progress is as follows:
   * leap: complete
   * hamming: complete
   * rna-transcription: complete
+  * bob: complete
 
 
 ## Submission Guide ##
