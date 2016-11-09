@@ -5,10 +5,24 @@
 
 var Bob = function() {};
 
+let responseLibrary = {
+  normal: 'Whatever.',
+  shouting: 'Whoa, chill out!',
+  expressive: 'Sure.',
+};
+
 Bob.prototype.hey = function(input) {
-//
-// YOUR CODE GOES HERE
-//
+  let responseType = 'normal';
+
+  if (input.toUpperCase() === input) {
+    responseType = 'shouting';
+  } else if (input.slice(-1) === '?' || input.slice(-1) === '!') {
+    // console.log('here', input)
+    responseType = 'expressive';
+  }
+
+
+  return responseLibrary[responseType];
 };
 
 module.exports = Bob;

@@ -8,22 +8,22 @@ describe('Bob', function() {
     expect(result).toEqual('Whatever.');
   });
 
-  xit('shouting', function() {
+  it('shouting', function() {
     var result = bob.hey('WATCH OUT!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit('asking a question', function() {
+  it('asking a question', function() {
     var result = bob.hey('Does this cryogenic chamber make me look fat?');
     expect(result).toEqual('Sure.');
   });
 
-  xit('talking forcefully', function() {
+  it('talking forcefully', function() {
     var result = bob.hey('Let\'s go make out behind the gym!');
-    expect(result).toEqual('Whatever.');
+    expect(result).toEqual('Sure.');
   });
 
-  xit('using acronyms in regular speech', function() {
+  it('using acronyms in regular speech', function() {
     var result = bob.hey('It\'s OK if you don\'t want to go to the DMV.');
     expect(result).toEqual('Whatever.');
   });
@@ -56,12 +56,12 @@ describe('Bob', function() {
   xit('shouting with umlauts', function() {
     /* NOTE: \xc4 = Ä
              \xe4 = ä
-             \xdc = Ü 
+             \xdc = Ü
              \xfc = ü
        "\xfcML\xe4\xdcTS" === "üMLäÜTS"
     */
-    
-    var result = bob.hey('\xdcML\xc4\xdcTS!'); 
+
+    var result = bob.hey('\xdcML\xc4\xdcTS!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
