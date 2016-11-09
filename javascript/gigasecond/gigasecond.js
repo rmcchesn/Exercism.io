@@ -1,11 +1,16 @@
 'use strict';
 
 let Gigasecond = function(date) {
-  this.date = date;
+  this.beginDate = date;
+
+  let gigaSec = Math.pow(10, 9);
+  this.gigaAnniversary = new Date(this.beginDate);
+  this.gigaAnniversary = this.gigaAnniversary
+    .setSeconds(this.beginDate.getSeconds() + gigaSec);
 };
 
-Gigasecond.prototype.data = function() {
-  
+Gigasecond.prototype.date = function() {
+  return new Date(this.gigaAnniversary);
 };
 
 module.exports = Gigasecond;
