@@ -4,9 +4,9 @@
 // Make sure to look at hello-world.spec.js--that should give you some hints about what is
 // expected here.
 
-var HelloWorld = function() {};
+let HelloWorld = function() {};
 
-HelloWorld.prototype.hello = function(input) {
+HelloWorld.prototype.hello = (input) => {
   return input ? `Hello, ${input}!` : 'Hello, World!'
 };
 
