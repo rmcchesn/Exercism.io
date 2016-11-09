@@ -25,6 +25,8 @@ Current progress is as follows:
 * `JavaScript`
   * hello-world: complete
   * leap: complete
+  * hamming: complete
+  * rna-transcription: complete
 
 
 ## Submission Guide ##
