@@ -4,7 +4,7 @@ let Words = function() {
 
 Words.prototype.count = function(wordCollection) {
   let words = {};
-  let re = /\s|\n/;
+  let re = /\s+/;
 
   wordCollection.split(re).forEach((chars) => {
     let word = chars.toLowerCase();
