@@ -4,8 +4,10 @@ let Words = function() {
 
 Words.prototype.count = function(wordCollection) {
   let words = {};
+  let re = /\s|\n/;
 
-  wordCollection.split(' ').forEach((word) => {
+  wordCollection.split(re).forEach((chars) => {
+    let word = chars.toLowerCase();
     if (words[word] === undefined) {
       words[word] = 1;
     } else {
