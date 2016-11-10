@@ -30,6 +30,7 @@ Current progress is as follows:
   * bob: complete
   * gigasecond: complete
   * word-count: complete
+  * Isogram: complete
 
 
 ## Submission Guide ##
