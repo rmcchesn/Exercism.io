@@ -29,6 +29,7 @@ Current progress is as follows:
   * rna-transcription: complete
   * bob: complete
   * gigasecond: complete
+  * word-count: complete
 
 
 ## Submission Guide ##
