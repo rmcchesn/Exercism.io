@@ -1,16 +1,13 @@
 'use strict';
 
-let Gigasecond = function(date) {
-  this.beginDate = date;
+const gigaSec = Math.pow(10, 12); // in milliseconds
 
-  let gigaSec = Math.pow(10, 9);
-  this.gigaAnniversary = new Date(this.beginDate);
-  this.gigaAnniversary = this.gigaAnniversary
-    .setSeconds(this.beginDate.getSeconds() + gigaSec);
+let Gigasecond = function(dateInput) {
+  this.startDate = dateInput;
 };
 
 Gigasecond.prototype.date = function() {
-  return new Date(this.gigaAnniversary);
+  return new Date(this.startDate.getTime() + gigaSec);
 };
 
 module.exports = Gigasecond;

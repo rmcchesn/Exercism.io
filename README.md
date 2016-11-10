@@ -28,6 +28,7 @@ Current progress is as follows:
   * hamming: complete
   * rna-transcription: complete
   * bob: complete
+  * gigasecond: complete
 
 
 ## Submission Guide ##
