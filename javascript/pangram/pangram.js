@@ -3,11 +3,10 @@ let Pangram = function(phrase) {
 };
 
 Pangram.prototype.isPangram = function() {
-  const duplicates = (/(.)(?=.*\1)/g);
-  const nonLetters = (/[^a-z]/g);
+  const duplicates = (/(.)(?=.*\1)/gi);
+  const nonLetters = (/[^a-z]/gi);
 
   let formattedPhrase = this.phrase
-    .toLowerCase()
     .replace(nonLetters, '')
     .replace(duplicates, '');
 
