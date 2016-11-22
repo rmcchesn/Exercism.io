@@ -30,8 +30,15 @@ BeerSong.prototype.verse = function(verseNum) {
   return firstSentence + secondSentence;
 };
 
-BeerSong.prototype.sing = function() {
+BeerSong.prototype.sing = function(start, end = 0) {
+  let allVerses = '';
 
+  for (let i = start; i >= end; i --) {
+    allVerses += this.verse(i);
+    i > end ? allVerses += '\n' : '';
+  }
+
+  return allVerses;
 };
 
 module.exports = BeerSong;
