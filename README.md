@@ -31,6 +31,9 @@ Current progress is as follows:
   * gigasecond: complete
   * word-count: complete
   * Isogram: complete
+  * Pangram: complete
+  * Beer-song: complete - to revise
+  * Phone-number: in process
 
 
 ## Submission Guide ##
