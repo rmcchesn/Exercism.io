@@ -8,6 +8,8 @@ let validatePhone = function(input) {
 
   if (digits.length === 10) {
     phoneNum = digits;
+  } else if (digits.length === 11 && digits[0] === '1') {
+    phoneNum = digits.slice(1);
   }
 
   return phoneNum;
@@ -19,6 +21,10 @@ let PhoneNumber = function(input) {
 
 PhoneNumber.prototype.number = function() {
   return this.phone;
+};
+
+PhoneNumber.prototype.areaCode = function() {
+  return this.phone.slice(0, 3);
 };
 
 module.exports = PhoneNumber;
