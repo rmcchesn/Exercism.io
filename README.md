@@ -33,7 +33,7 @@ Current progress is as follows:
   * Isogram: complete
   * Pangram: complete
   * Beer-song: complete - to revise
-  * Phone-number: in process
+  * Phone-number: complete
 
 
 ## Submission Guide ##

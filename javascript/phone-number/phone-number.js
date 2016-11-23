@@ -27,4 +27,10 @@ PhoneNumber.prototype.areaCode = function() {
   return this.phone.slice(0, 3);
 };
 
+PhoneNumber.prototype.toString = function() {
+  return `(${this.areaCode()}) ` +
+      `${this.phone.slice(3, 6)}-` +
+      `${this.phone.slice(6)}`;
+};
+
 module.exports = PhoneNumber;
