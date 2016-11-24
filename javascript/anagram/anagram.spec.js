@@ -51,21 +51,21 @@ describe('Anagram', function() {
     expect(matches).toEqual(['gallery', 'regally', 'largely']);
   });
 
-  xit('detects anagrams case-insensitively',function() {
+  it('detects anagrams case-insensitively',function() {
     var subject = new Anagram('Orchestra');
     var matches = subject.matches(['cashregister', 'Carthorse', 'radishes']);
 
     expect(matches).toEqual(['Carthorse']);
   });
 
-  xit('does not detect a word as its own anagram',function() {
+  it('does not detect a word as its own anagram',function() {
     var subject = new Anagram('banana');
     var matches = subject.matches(['Banana']);
 
     expect(matches).toEqual([]);
   });
 
-  xit('matches() accepts string arguments',function() {
+  it('matches() accepts string arguments',function() {
     var subject = new Anagram('ant');
     var matches = subject.matches('stand', 'tan', 'at');
 
