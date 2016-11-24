@@ -5,6 +5,11 @@ let Anagram = function(mainWord) {
 };
 
 Anagram.prototype.matches = function(dictionary) {
+  if (!Array.isArray(dictionary)) {
+    let rest = Array.prototype.slice.call(arguments, 1);
+    dictionary = [dictionary].concat(rest);
+  }
+
   let letters = this.mainWord
     .toLowerCase()
     .split('')
