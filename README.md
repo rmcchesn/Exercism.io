@@ -34,6 +34,8 @@ Current progress is as follows:
   * Pangram: complete
   * Beer-song: complete - to revise
   * Phone-number: complete
+  * Anagram: complete
+  * Food-chain: in-process
 
 
 ## Submission Guide ##
