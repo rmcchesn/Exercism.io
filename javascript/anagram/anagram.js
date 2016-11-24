@@ -5,7 +5,11 @@ let Anagram = function(mainWord) {
 };
 
 Anagram.prototype.matches = function(dictionary) {
+  let letters = this.mainWord.split('').sort().join('');
 
+  return dictionary.filter((dictWord) => {
+    return letters === dictWord.split('').sort().join('');
+  });
 };
 
 module.exports = Anagram;
