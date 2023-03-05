@@ -1,0 +1,3 @@
+# Clojure related
+.lein-failures
+target/

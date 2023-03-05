@@ -2,9 +2,7 @@
 
 ## Contents ##
 * [About Exercism](#about-exercism)
-* [Progress](#progress)
 * [Submission Guide](#submission-guide)
-* [Potential Improvements](#potential-improvements)
 * [Useful References](#useful-references)
 
 
@@ -20,32 +18,10 @@ From the exercism.io about page:
 Please refer to [exercism.io](http://exercism.io/) to create free account and solve problems.
 
 
-## Progress ##
-Current progress is as follows:
-* `JavaScript`
-  * hello-world: complete
-  * leap: complete
-  * hamming: complete
-  * rna-transcription: complete
-  * bob: complete
-  * gigasecond: complete
-  * word-count: complete
-  * Isogram: complete
-  * Pangram: complete
-  * Beer-song: complete - to revise
-  * Phone-number: complete
-  * Anagram: complete
-  * Food-chain: in-process
-
-
 ## Submission Guide ##
 * Once initial setup complete:
   * Fetch new problem with `exercism fetch languageofchoice`
   * Submit specific problem with `exercism submit hello-world.js`
-
-
-## Potential Improvements ##
-* OPEN
 
 
 ## Useful References ##
