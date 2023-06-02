@@ -28,4 +28,18 @@ Please refer to [exercism.io](http://exercism.io/) to create free account and so
 * Exercism: [exercism.io Homepage](http://exercism.io/)
 
 ## 12in23 Challenge
-Now for many people the most important question is how to get the Functional February badge! Well it’s pretty simple! Choose one of those languages I just mentioned and solve and publish five exercises in it! You can choose any exercises to solve other than “Hello World”, but we’re recommending five in particular that you try at some point during the month. Those are Hamming (to explore higher order functions), Collatz-conjecture (to practise recursion), Robot Simulator (to play with immutability), and both Yacht and Protein Translation (for pattern matching and higher order functions). All those are listed on the #12in23 page so you can check that later!
+### March - recommended exercises
+We also have five featured exercises to try:
+* Linked-list or simple-linked-list (depending on the language): allocating/freeing memory, pointers
+* secret-handshake: bitwise operations
+* ~~pangram: for loops, strings and characters~~
+* sieve: arrays, for loops
+* binary-search: arrays, loops
+
+### February - recommended exercises
+Now for many people the most important question is how to get the Functional February badge! Well it’s pretty simple! Choose one of those languages I just mentioned and solve and publish five exercises in it! You can choose any exercises to solve other than “Hello World”, but we’re recommending five in particular that you try at some point during the month. Those are:
+* Hamming (to explore higher order functions)
+* Collatz-conjecture (to practise recursion)
+* Robot Simulator (to play with immutability)
+* both Yacht and Protein Translation (for pattern matching and higher order functions).
+All those are listed on the #12in23 page so you can check that later!
